@@ -1,6 +1,7 @@
+import { memo } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function ProductCard({ product }) {
+function ProductCard({ product }) {
     return (
         <article
             style={{
@@ -76,3 +77,5 @@ export default function ProductCard({ product }) {
         </article>
     );
 }
+
+export default memo(ProductCard);
