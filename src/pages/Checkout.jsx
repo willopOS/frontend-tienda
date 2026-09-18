@@ -48,7 +48,7 @@ export default function Checkout() {
     return (
         <main style={{ maxWidth: '900px', margin: '2rem auto', padding: '0 1rem' }}>
             <h2>Finalizar Compra</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginTop: '1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', marginTop: '1.5rem' }}>
                 <section>
                     <h3>Resumen ({totalItems} productos)</h3>
                     {cart.map((item) => (

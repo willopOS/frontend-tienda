@@ -1,11 +1,28 @@
-* {
+/* Reseteo universal para cálculo correcto de tamaños */
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Elimina cualquier barra de desplazamiento horizontal */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: #f8fafc;
   color: #1e293b;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imágenes siempre adaptables */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

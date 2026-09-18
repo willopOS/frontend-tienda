@@ -8,17 +8,19 @@ export default function Navbar() {
         color: isActive ? '#38bdf8' : '#ffffff',
         textDecoration: 'none',
         fontWeight: isActive ? 'bold' : 'normal',
-        marginLeft: '1.5rem',
+        fontSize: '0.95rem',
     });
 
     return (
         <nav
             style={{
                 background: '#0f172a',
-                padding: '1rem 2rem',
+                padding: '1rem 1.25rem',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                gap: '0.75rem',
                 position: 'sticky',
                 top: 0,
                 zIndex: 10,
@@ -36,7 +38,7 @@ export default function Navbar() {
                 🛍️ FakeStore
             </NavLink>
 
-            <div style={{ display: 'flex', alignItems: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <NavLink to="/" style={linkStyle}>
                     Inicio
                 </NavLink>
