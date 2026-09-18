@@ -29,7 +29,7 @@ Aplicación web interactiva desarrollada con **React** y **Vite**, que consume l
 
 ## 📂 Estructura del Proyecto
 
-\`\`\`text
+```text
 src/
 ├── components/   # Componentes reutilizables (Navbar, ProductCard)
 ├── context/      # Estado global (CartContext)
@@ -38,8 +38,7 @@ src/
 ├── App.jsx       # Enrutamiento principal
 ├── main.jsx      # Punto de entrada de React
 └── index.css     # Estilos globales y reseteo responsive
-\`\`\`
-
+```
 ---
 
 ## 💻 Instalación y Ejecución Local
